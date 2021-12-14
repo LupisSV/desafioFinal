@@ -44,6 +44,5 @@ function imprimirTabla(){
         const campo3 = document.createElement('td')
         campo3.innerText = '$ '+post.id+' MXN.'
         filaN.appendChild(campo3)
-        console.log('hola')
     })
 }
