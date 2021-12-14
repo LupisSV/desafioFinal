@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Proyecto final</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
+    <link href="assets/css/style.css" rel="stylesheet" >
+    <!-- Whatsapp -->
+    <link href="assets/css/whatsapp.css" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky-top">
+        <div class="container-fluid">
+            <nav class="row navbar navbar-expand-lg navbar-light"><!-- MENÚ PRINCIPAL -->
+                <div class="col-md-12 col-lg-3"><!-- LOGOS -->
+                    <div class="row">
+                        <div class="col-auto p-0"><!-- UNAM -->
+                            <a class="navbar-brand" href="index.html" target="_blank">
+                                <img src="assets/img/logo.png" alt="Logo" height="62" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse text-center" id="menu-principal"><!-- VÍNCULOS -->
+                    <ul class="navbar-nav mx-auto">                                    
+                        <li class="nav-item py-2 py-lg-0">
+                            <a class="nav-link" href="index.html">Control</a>
+                        </li>
+                        <li class="nav-item py-2 py-lg-0">
+                            <a class="nav-link" href="inventario.html">Ver inventario</a>
+                        </li>
+                        <li class="nav-item py-2 py-lg-0">
+                            <a class="nav-link" href="catalogo_proveedor.html">Catálogo proveedor</a>
+                        </li>
+                    </ul>
+                    <div class="smart col-lg-3 py-3 py-lg-0"><!-- REDES SOCIALES -->
+                        <ul class="m-0">
+                            <li>
+                                <a href="#" class="social-menu-link">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-menu-link">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>                      
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>      
+    </header>
+    <div id="base">
+        <section class="py-4 bg-section"><!-- SECTION FONDO GRIS -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 py-2 text-center">
+                        <h2>GUADALUPE MONSERRAT SANDOVAL VIZCAINO</h2>
+                        <h5 class="color-template">Listado de productos de proveedor Moca</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container py-5">
+                <div class="row py-2">
+                    <div class="col-12">
+                        <div class="alert alert-success" id="mensaje_correcto" >
+                            <!-- mensaje de éxito -->
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="alert alert-danger" id="mensaje_error" >
+                            <!-- mensaje de error -->
+                        </div>
+                    </div>                        
+                </div>     
+                <div class="row">
+                    <div class="col-12" id="impresion">
+                        <h3 class="titulo">Lista de productos</h3>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </div>   
+
+    <!-- Whatsapp button -->
+    <a href="https://wa.me/0000112222?text=Buen%20día.%20Necesito%20más%20información%20del%20producto:%20" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float" id="btn-whatsapp"> ¡Contáctanos!</i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jsmartable/jsmartable.min.js"></script>
+    <!-- Main js -->
+    <script src="assets/js/peticionCatalogo.js"></script>
+</body>
+</html>
