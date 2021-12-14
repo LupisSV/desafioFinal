@@ -1,11 +1,9 @@
-let catalogoProductos = []
+var catalogoProductos = []
 
 $.get('https://jsonplaceholder.typicode.com/posts', (response) => {
     catalogoProductos = response
+    imprimirTabla()
 })
-
-console.log(catalogoProductos)
-
 
 function imprimirTabla(){
     const impresion = document.getElementById('impresion')
@@ -34,17 +32,18 @@ function imprimirTabla(){
     columnas.appendChild(col3)
     const tbody = document.createElement('tbody')
     tabla.appendChild(tbody)
-    for(let i = 0; i < catalogoProductos.length; i++){
+    catalogoProductos. forEach ((post) => {
         const filaN = document.createElement('tr')
         tbody.appendChild(filaN)
         const campo1 = document.createElement('td')
-        campo1.innerText = catalogoProductos[i].title
+        campo1.innerText = post.title
         filaN.appendChild(campo1)
         const campo2 = document.createElement('td')
-        campo2.innerText = catalogoProductos[i].userId+' piezas'
+        campo2.innerText = post.userId+' piezas'
         filaN.appendChild(campo2)
         const campo3 = document.createElement('td')
-        campo3.innerText = '$ '+catalogoProductos[i].id+' MXN.'
+        campo3.innerText = '$ '+post.id+' MXN.'
         filaN.appendChild(campo3)
-    }
+        console.log('hola')
+    })
 }
